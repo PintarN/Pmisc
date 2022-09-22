@@ -11,5 +11,5 @@ This function includes several functions that are handy when handling patent dat
 You can install the development version of Pmisc like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install_github("PintarN/Pmisc")
 ```
