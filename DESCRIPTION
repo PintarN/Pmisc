@@ -1,28 +1,29 @@
 Package: Pmisc
 Title: Miscallenous functions to handle patent data
-Version: 1.0
+Version: 1.1
 Authors@R: person("Nico", "Pintar", email = "nico.pintar@wu.ac.at", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
 Depends: 
-    R (>= 3.4.2),
-    foreach,
+    R (>= 3.4.2)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+Imports: 
     tibble,
+    foreach,
     Matrix,
+    matrixStats,
     dplyr,
     tidyr,
     igraph,
     tidygraph,
     forcats,
     future,
-    stats,
     doFuture,
-    progressr,
-    matrixStats
-License: What license is it under?
-Encoding: UTF-8
-LazyData: true
-RoxygenNote: 7.1.2
-Suggests: knitr,
-    rmarkdown
-VignetteBuilder: knitr
-Roxygen: list(markdown = TRUE)
+    stats,
+    progressr

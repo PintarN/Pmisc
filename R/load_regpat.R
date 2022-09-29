@@ -16,7 +16,7 @@
 #'
 
 
-load.regpat <- function(path, region, disc_periphery = "yes", regionlist = "no", techclass = c("all","all") , years = "all", periodisation = "prio_year", disc_unclass = "yes") 
+load_regpat <- function(path, region, disc_periphery = "yes", regionlist = "no", techclass = c("all","all") , years = "all", periodisation = "prio_year", disc_unclass = "yes") 
 {
 
     

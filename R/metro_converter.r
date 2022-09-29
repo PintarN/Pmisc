@@ -12,7 +12,7 @@
 
 
 
-metro.converter <- function(data)  
+metro_converter <- function(data)  
 {
 
   metro_output <- data[1]

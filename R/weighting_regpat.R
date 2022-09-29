@@ -25,7 +25,7 @@
 #'
 
 
-weighting.regpat <- function(data, path = "no", quality = "no", within_cits = "leave", periodisation = "prio_year", years = "all", smallnumber = c("no","no"), smallnumber_count = "non_qu") 
+weighting_regpat <- function(data, path = "no", quality = "no", within_cits = "leave", periodisation = "prio_year", years = "all", smallnumber = c("no","no"), smallnumber_count = "non_qu") 
 {
 
 final_df <- data #define dataframe for later use   

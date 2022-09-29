@@ -19,7 +19,7 @@
 
 
 
-nuts.converter <- function(data, from = "2016", to = "2013", weight = tibble::tibble("equal","dummy"), merged = "sum")  
+nuts_converter <- function(data, from = "2016", to = "2013", weight = tibble::tibble("equal","dummy"), merged = "sum")  
 {
 
 
