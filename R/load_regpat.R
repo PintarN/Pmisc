@@ -1,17 +1,17 @@
-#' Load regpat data and prepare for further handling 
+#' Load REGPAT data and prepare for further handling 
 #' 
-#' Load regpat data from text files and creates a merged dataframe with some optional adjustments
+#' Load REGPAT data from text files and creates a merged dataframe with some optional adjustments
 #'
-#' @param path Vector of two (three with CPC) paths to two regpat text files, starting with year_tech. If CPC classes are used, you also need to give the path to the CPC file (in third element).
-#' @param region Text or number input to set regionalisation. Options are: "0" - "3" for NUTS regions and "metro" for matching with metro regions by EUROSTAT
-#' @param disc_periphery A string indicating if periphery (when metro matching) data is deleted or not, defaults to "yes"
+#' @param path Vector of two (three with CPC) paths to two REGPAT text files (year_tech and inventor_region), starting with year_tech. For delim "|" should be used. If CPC classes are used, you also need to give the path to the CPC file (in third element).
+#' @param region Text or number input to set regionalisation. Options are: "0" - "3" for NUTS regions and "metro" for matching with metro regions by EUROSTAT.
+#' @param disc_periphery A string indicating if periphery (when metro matching) data is deleted or not, defaults to "yes".
 #' @param techclass Three strings indicating which tech class to use (IPC or CPC or Schmoch (2008)), the digit cutoff (or name of classification level (e.g. subclass)) for main tech class (1-8, not used in Schmoch matching) and thirdly the name of level for long tech class (e.g. 'maingroup'). Defaults to no cutting.
-#' @param years Vector of year intervalls used. Default is all years
-#' @param periodisation Text to set which periodisation should be used. Options are: "prio_year" (default) or "app_year" for new naming convention. 
+#' @param years Vector of year intervals used (like so: c(2000,2012). Default is "all" years.
+#' @param periodisation Text to set which periodisation should be used. Options are: "prio_year" (default) or "app_year" for new naming convention
 #' @param regionlist A list of regions which should be used, all others will be removed. Column name for region codes should be "reg_code. Needs to match with regionalisation. Defaults to "no", meaning all regions are retained.
 #' @param disc_unclass A string indicating whether unclassified regions should be removed, defaults to "yes".
 #' 
-#' @return A list of dataframes of regpat data
+#' @return A list of dataframes of REGPAT data
 #' @export
 #'
 

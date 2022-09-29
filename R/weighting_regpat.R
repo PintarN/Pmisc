@@ -1,11 +1,11 @@
-#' Calculate weights for regpat patent data
+#' Calculate weights for REGPAT patent data
 #' 
-#' Calculate (fractional, quality adjusted) weights for regpat patent data
+#' Calculate (fractional, quality adjusted) weights for REGPAT patent data
 #'
-#' @param data A dataframe with prepared (load.regpat) regpat data.
+#' @param data A dataframe with prepared (load.regpat) REGPAT data.
 #' @param path A vector of paths to OECD citation database files (EP_citation,EP_eqv,WO_citation) 
-#' and regpat files (EPO and PCT) if within_cits is "drop", or alternatively paths to the saved .rda files, as last entry please give the version YYYYMM
-#' @param quality Two strings determining if and which quality weight adjustement should be used, defaults to no quality adjustment.
+#' and REGPAT files (EPO and PCT) if within_cits is "drop", or alternatively paths to the saved .rda files, as last entry please give the version YYYYMM
+#' @param quality Two strings determining if and which quality weight adjustment should be used, defaults to no quality adjustment.
 #' One of those:
 #' "times_cits" for old multiplication of patent weight with number of forward citations
 #' "times_cits1" for old multiplication of patent weight with number of forward citations + 1
@@ -14,13 +14,13 @@
 #' and the number of months that should be taken as max citation lag
 #' @param within_cits Text (leave or drop) to set whether citations from within region should be excluded from the citation count, default is leave in
 #' @param periodisation Text to set which periodisation should be used. Options are: "prio_year" (default) or "app_year" for forward citation quality adjusted
-#' @param years Vector of year intervals used. Default is all years
+#' @param years Vector of year intervals (like so: c(2000,2012)) used. Default is all years
 #' @param smallnumber Two strings (corresponding to tech classes and then regions) giving the absolute patent count cutoff or 
 #' defining which relative cutoff is to be used."10th_perc" or "20th_perc" for e.g. relative. Techs are cut at level given as input.
 #' @param smallnumber_count String determining how small techs or regions should be excluded, based on quality or non-quality adjusted (fractional) patent count
 #' Default is non quality adjusted
 #' 
-#' @return A dataframe of regpat data with corresponding weights
+#' @return A dataframe of REGPAT data with corresponding weights
 #' @export
 #'
 
