@@ -17,4 +17,4 @@ devtools::install_github("PintarN/Pmisc")
 ## Documentation
 
 At this point, there is no dedicated doc file. However, you can easily read a documentation 
-for each function by accessing the "help" section in your R IDE. 
+for each function by accessing the "help" section of each function in your R IDE. 
